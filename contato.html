@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Importando a fonte Dubiel do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Dubiel&display=swap');
+
+        
+        body {
+            background-color: #e0f7fa; /* 
+            font-family: 'Dubiel', serif; 
+        }
+
+        /* Estilos para o título principal */
+        h1 {
+            text-align: center; 
+            font-size: 2em; 
+            color: black; 
+        }
+
+        /* Estilos para a área principal do conteúdo */
+        main {
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
+        /* Estilos para o formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+        }
+
+        /* Estilos para os campos do formulário */
+        label {
+            font-size: 1.2em; 
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            font-size: 1em; 
+        }
+
+        textarea {
+            height: 150px; 
+        }
+
+        button {
+            padding: 10px 20px; 
+            background-color: #42a5f5; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            font-size: 1em; 
+            cursor: pointer; 
+        }
+
+        button:hover {
+            background-color: #1e88e5; 
+        }
+
+        /* Estilos para o menu de navegação */
+        nav ul {
+            display: flex; 
+            justify-content: space-around; 
+            padding: 0; 
+            list-style: none; 
+        }
+
+        /* Estilos para cada item do menu */
+        nav ul li {
+            margin: 0 10px; 
+        }
+
+        /* Estilos para os links do menu */
+        nav ul li a {
+            display: block; 
+            padding: 10px; 
+            border-radius: 50%; 
+            text-align: center; 
+            color: white; 
+            text-decoration: none; 
+        }
+
+        /* Cores específicas para cada link do menu */
+        nav ul li:nth-child(1) a {
+            background-color: #ff6f61; 
+        }
+        nav ul li:nth-child(2) a {
+            background-color: #42a5f5; 
+        }
+        nav ul li:nth-child(3) a {
+            background-color: #66bb6a; 
+        }
+        nav ul li:nth-child(4) a {
+            background-color: #ffa726; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Por favor, entre em contato comigo</h1>
+        <form id="contato-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
